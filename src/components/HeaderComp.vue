@@ -2,13 +2,10 @@
   <header>
     <div id="intro-header">
       <div class="container flex white">
-        <span>ciaociaociaociao</span>
-        <ul class="flex">
-          <li>ciao</li>
-          <li>ciao</li>
-          <li>ciao</li>
-          <li>ciao</li>
-        </ul>
+        <span>Everything about Lifestyle, Travel and Gadgets!</span>
+        <div class="flex">
+          ciao
+        </div>
       </div>
     </div>
 
@@ -19,10 +16,13 @@
 
     <div class="container border-top">
       <div id="navbar" class="flex justify-content-between">
-      <div>ciao</div>
-      <div>
-        <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
-      </div>
+        <div>
+          <!-- componente figlio con i props -->
+          <LinkComp v-for="(elem, index) in links" :key="index" :nomeProps="elem"/>
+        </div>
+        <div>
+          <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
+        </div>
     </div>
     </div>
     
@@ -30,10 +30,39 @@
 </template>
 
 <script>
+import LinkComp from './LinkComp.vue';
+
 export default {
   name: 'HeaderComp',
-  props: {
-    msg: String
+  components: {
+    LinkComp
+  },
+  data(){
+    return{
+      links: [
+        {
+          link: "home"
+        },
+        {
+          link: "elements"
+        },
+        {
+          link: "features"
+        },
+        {
+          link: "pages"
+        },
+        {
+          link: "portfolio"
+        },
+        {
+          link: "blog"
+        },
+        {
+          link: "shop"
+        }
+      ]
+    }
   }
 }
 </script>
