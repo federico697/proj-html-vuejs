@@ -1,18 +1,19 @@
 <template>
     <section>
-        <div class="card">
+        <div class="card my-1">
             <div class="info info-bottom white">
                     <button class="badge white">lifestyle</button>
                     <h2>the best way to ride a motorcycle</h2> 
             </div>
         </div>
         <h4>featured author</h4>
-            <div>
-                <div>
-
+            <div class="flex align-item-center">
+                <div class="w-20">
+                    <img src="../assets/images/avatar.jpg" alt="" class="w-100">
                 </div>
-                <div>
-
+                <div class="w-70 ml-30">
+                    <div>John Doe</div>
+                    <div>Lorem ipsum dolor, sit amet consectetur adipisicing eullam non molestias esse culpa facilis. Blanditiis, odit?</div>
                 </div>
             </div>
     </section>
@@ -38,7 +39,9 @@
 }
 .card{
     height: 200px;
-    background-image: url('../assets/images/blog-66.jpg');
+    background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url('../assets/images/blog-66.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -52,5 +55,36 @@
 }
 .white{
     color: white;
+}
+.flex{
+  display: flex;
+}
+.flex-col{
+    flex-direction: column;
+}
+.justify-content-between{
+  justify-content: space-between;
+}
+.align-item-center{
+    align-items: center;
+}
+.w-20{
+    width: 20%;
+}
+.w-70{
+    width: 70%;
+}
+.w-100{
+    width: 100%;
+}
+.ml-30{
+    margin-left: 30px;
+}
+.my-1{
+    margin: 30px 0;
+}
+h4{
+    margin: 20px 0;
+    margin-top: 5px;
 }
 </style>

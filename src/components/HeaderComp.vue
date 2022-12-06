@@ -2,9 +2,12 @@
   <header>
     <div id="intro-header">
       <div class="container flex white">
-        <span>Everything about Lifestyle, Travel and Gadgets!</span>
+        <span class="mr-1">Everything about Lifestyle, Travel and Gadgets!</span>
         <div class="flex">
-          ciao
+          <div class="mr-1">sign in</div>
+          <div class="mr-1">about us</div>
+          <div class="mr-1">contact us</div>
+          <div class="mr-1">buy now</div>
         </div>
       </div>
     </div>
@@ -76,7 +79,7 @@ export default {
 #logo-header,
 #navbar{
   margin: 0 auto;
-  width: 80%;
+  width: 75%;
   padding: 10px 0;
 }
 .border-top{
@@ -88,6 +91,7 @@ export default {
 }
 .justify-content-between{
   justify-content: space-between;
+  align-items: center;
 }
 li{
   margin-left: 20px;
@@ -98,5 +102,8 @@ li{
 img{
   width: 10%;
   padding: 20px 0;
+}
+.mr-1{
+  margin-right: 20px;
 }
 </style>

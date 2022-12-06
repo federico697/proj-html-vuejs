@@ -1,5 +1,10 @@
 <template>
     <footer>
+        <div class="up-rotate">
+            <div class="container">
+                <span class=" up-rotate2">get in touch</span>
+            </div>
+        </div>
         <div id="footer-light">
             <div class="container white flex">
                 <div class=" w-30">
@@ -97,11 +102,15 @@
 </script>
 
 <style lang="scss" scoped>
+
 .container{
   margin: 0 auto;
-  width: 80%;
+  width: 75%;
 }
 #footer-light{
+    background-color: #404040;
+}
+.bg-dark{
     background-color: #404040;
 }
 #footer-dark{
@@ -171,5 +180,20 @@ button{
     color: #ffffff;
     border-radius: 5px;
     cursor: pointer;
+}
+.up-rotate{
+    background: #404040;
+    height: 30px;
+}
+.up-rotate2{
+    padding: 18px;
+    background-color: #0088cc;
+    position: relative;
+    left: 17px;
+    color:#ffffff
+}
+footer{
+    position: relative;
+    bottom: 22px;
 }
 </style>

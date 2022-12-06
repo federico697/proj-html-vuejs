@@ -36,7 +36,7 @@
                 <div>january 12, 2019</div>
             </div>
         </div>
-        <div class="flex border-bottom w-100 gap my-1">
+        <div class="flex gap my-1">
             <div class="w-10">
                 <img src="../assets/images/blog-59.jpg" alt="" class="w-100">
             </div>

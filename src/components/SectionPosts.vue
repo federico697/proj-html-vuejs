@@ -33,7 +33,7 @@ import FeaturedPosts from './FeaturedPosts.vue';
 
 <style lang="scss" scoped>
 .container{
-    width: 80%;
+    width: 75%;
     margin: 0 auto;
 }
 .flex{
